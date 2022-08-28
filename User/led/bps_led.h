@@ -14,17 +14,24 @@
 
 #define on     1
 #define off    0
-#define led(a)         if(a)\
+#define led_G(a)         if(a)\
                              {GPIO_ResetBits(LED_G_GPIO_PORT,LED_G_GPIO_PIN);}\
 											 else\
                              {GPIO_SetBits(LED_G_GPIO_PORT, LED_G_GPIO_PIN);} 
+														 
+#define led_R(a)         if(a)\
+                             {GPIO_ResetBits(LED_G_GPIO_PORT,LED_R_GPIO_PIN);}\
+											 else\
+                             {GPIO_SetBits(LED_G_GPIO_PORT, LED_R_GPIO_PIN);}
+														 													 
+#define led_B(a)         if(a)\
+                             {GPIO_ResetBits(LED_G_GPIO_PORT,LED_B_GPIO_PIN);}\
+											 else\
+                             {GPIO_SetBits(LED_G_GPIO_PORT, LED_B_GPIO_PIN);} 
 
 
 
 
 
-void LED_G_GPIO_Config(void);
-void LED_B_GPIO_Config(void);
-void LED_R_GPIO_Config(void);
-
+void LED_GPIO_Config(void);
 #endif
