@@ -1,6 +1,6 @@
 #include "stm32f10x.h"                  // Device header
 #include "bps_led.h"
-//void delay_ms(int n)//ÑÓÊ±º¯Êý
+//void delay_ms(int n)//Ã‘Ã“ÃŠÂ±ÂºÂ¯ÃŠÃ½
 //{
 //	int i;
 //	while (n--)
@@ -15,8 +15,8 @@ int main()
 {
 	while (1)
 	{
-		LED_G_GPIO_Config();
-		led(off);
+		LED_GPIO_Config();
+		led_G(on);
 	}
 }
 
